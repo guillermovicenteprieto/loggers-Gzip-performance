@@ -1,0 +1,372 @@
+Statistical profiling result from info-v8.log, (3838 ticks, 0 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+   3265   85.1%          C:\WINDOWS\SYSTEM32\ntdll.dll
+    555   14.5%          C:\Program Files\nodejs\node.exe
+      1    0.0%          C:\WINDOWS\System32\KERNELBASE.dll
+      1    0.0%          C:\WINDOWS\System32\KERNEL32.DLL
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+      2    0.1%   12.5%  LazyCompile: *resolve node:path:158:10
+      2    0.1%   12.5%  Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    0.0%    6.3%  RegExp: ^\/info\/?$
+      1    0.0%    6.3%  LazyCompile: *normalizeString node:path:66:25
+      1    0.0%    6.3%  LazyCompile: *next C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\express\lib\router\index.js:176:16
+      1    0.0%    6.3%  LazyCompile: *_storeHeader node:_http_outgoing:374:22
+      1    0.0%    6.3%  LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:583:37
+      1    0.0%    6.3%  Function: ^resolve node:path:158:10
+      1    0.0%    6.3%  Function: ^resOnFinish node:_http_server:793:21
+      1    0.0%    6.3%  Function: ^percolateDown node:internal/priority_queue:49:16
+      1    0.0%    6.3%  Function: ^isstats C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\etag\index.js:104:18
+      1    0.0%    6.3%  Function: ^compileFunction node:vm:308:25
+      1    0.0%    6.3%  Function: ^afterWrite node:internal/streams/writable:487:20
+      1    0.0%    6.3%  Function: ^Module.require node:internal/modules/cjs/loader:997:36
+
+ [C++]:
+   ticks  total  nonlib   name
+
+ [Summary]:
+   ticks  total  nonlib   name
+     16    0.4%  100.0%  JavaScript
+      0    0.0%    0.0%  C++
+     14    0.4%   87.5%  GC
+   3822   99.6%          Shared libraries
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   3265   85.1%  C:\WINDOWS\SYSTEM32\ntdll.dll
+     35    1.1%    C:\Program Files\nodejs\node.exe
+     13   37.1%      LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1    7.7%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-UZ7IJ6VM.mjs:1:43042
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-UZ7IJ6VM.mjs:1:44069
+      1    7.7%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-SSMJDIU2.mjs:1:23967
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-SSMJDIU2.mjs:1:87259
+      1    7.7%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-OVYY3YMM.mjs:1:40788
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-OVYY3YMM.mjs:1:116518
+      1    7.7%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-MJKJF6AT.mjs:1:1023
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            Script: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/index.mjs:1:1
+      1    7.7%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-HRCVE76A.mjs:1:14688
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-HRCVE76A.mjs:1:15015
+      1    7.7%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-F4J57YML.mjs:1:4637
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-F4J57YML.mjs:1:16052
+      1    7.7%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-EAXTCEWT.mjs:1:228190
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            Script: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/index.mjs:1:1
+      1    7.7%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-BEPO4KA3.mjs:10:427004
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-BEPO4KA3.mjs:10:575487
+      1    7.7%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-BEPO4KA3.mjs:10:242529
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-BEPO4KA3.mjs:10:575487
+      1    7.7%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-7SZNGBPO.mjs:1:5609
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            Script: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/index.mjs:1:1
+      1    7.7%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-3BYHJQ4B.mjs:1:54998
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            Script: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/index.mjs:1:1
+      1    7.7%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-3BYHJQ4B.mjs:1:29257
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-3BYHJQ4B.mjs:1:54998
+      1    7.7%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-2IRNXXOJ.mjs:1:12399
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-2IRNXXOJ.mjs:1:28424
+      3    8.6%      C:\Program Files\nodejs\node.exe
+      1   33.3%        LazyCompile: ~set pathname node:internal/url:887:15
+      1  100.0%          C:\Program Files\nodejs\node.exe
+      1  100.0%            LazyCompile: ~pathToFileURL node:internal/url:1458:23
+      1   33.3%        LazyCompile: ~isNumber C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\minimist\index.js:240:19
+      1  100.0%          LazyCompile: ~module.exports C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\minimist\index.js:1:27
+      1  100.0%            Script: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/src/utils/port.js:1:1
+      1   33.3%        Function: ~<anonymous> C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\@mapbox\node-pre-gyp\lib\util\napi.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    2.9%      LazyCompile: ~startSession C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\mongoose\node_modules\mongodb\lib\sdam\topology.js:342:17
+      1  100.0%        LazyCompile: ~<anonymous> C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\mongoose\node_modules\mongodb\lib\operations\execute_operation.js:16:48
+      1  100.0%          LazyCompile: ~maybePromise C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\mongoose\node_modules\mongodb\lib\utils.js:397:22
+      1  100.0%            LazyCompile: ~executeOperation C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\mongoose\node_modules\mongodb\lib\operations\execute_operation.js:11:26
+      1    2.9%      LazyCompile: ~parse node:url:167:37
+      1  100.0%        LazyCompile: ~urlParse node:url:151:18
+      1  100.0%          LazyCompile: ~validate_config C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\@mapbox\node-pre-gyp\lib\util\versioning.js:195:25
+      1  100.0%            LazyCompile: ~exports.find C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\@mapbox\node-pre-gyp\lib\pre-binding.js:17:24
+      1    2.9%      LazyCompile: ~nopt C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\@mapbox\node-pre-gyp\node_modules\nopt\lib\nopt.js:26:15
+      1  100.0%        LazyCompile: ~parseOpts C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\@mapbox\node-pre-gyp\lib\node-pre-gyp.js:144:37
+      1  100.0%          LazyCompile: ~Run C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\@mapbox\node-pre-gyp\lib\node-pre-gyp.js:78:13
+      1  100.0%            LazyCompile: ~exports.find C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\@mapbox\node-pre-gyp\lib\pre-binding.js:17:24
+      1    2.9%      LazyCompile: ~json C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\express\lib\response.js:239:25
+      1  100.0%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/src/routes/routes.js:18:17
+      1  100.0%          LazyCompile: ~handle C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\express\lib\router\layer.js:86:49
+      1  100.0%            LazyCompile: ~next C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\express\lib\router\route.js:114:16
+      1    2.9%      LazyCompile: ~isASCIIAlphanumeric C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\mongodb-connection-string-url\node_modules\whatwg-url\lib\infra.js:13:29
+      1  100.0%        LazyCompile: ~parseScheme C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\mongodb-connection-string-url\node_modules\whatwg-url\lib\url-state-machine.js:555:65
+      1  100.0%          LazyCompile: ~URLStateMachine C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\mongodb-connection-string-url\node_modules\whatwg-url\lib\url-state-machine.js:481:25
+      1  100.0%            LazyCompile: ~module.exports.basicURLParse C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\mongodb-connection-string-url\node_modules\whatwg-url\lib\url-state-machine.js:1206:41
+      1    2.9%      LazyCompile: ~get length C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\mongoose\node_modules\mongodb\lib\utils.js:863:15
+      1  100.0%        LazyCompile: ~read C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\mongoose\node_modules\mongodb\lib\utils.js:876:9
+      1  100.0%          LazyCompile: ~processIncomingData C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:79:29
+      1  100.0%            LazyCompile: ~_write C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:26:11
+      1    2.9%      LazyCompile: ~depd C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\depd\index.js:105:15
+      1  100.0%        Function: ~<anonymous> C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\express\node_modules\body-parser\index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    2.9%      LazyCompile: ~createDebug C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\debug\src\debug.js:63:21
+      1  100.0%        Function: ~<anonymous> C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\finalhandler\index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    2.9%      LazyCompile: ~createAppender C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\log4js\lib\appenders\index.js:62:24
+      1  100.0%        LazyCompile: ~getAppender C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\log4js\lib\appenders\index.js:48:21
+      1  100.0%          LazyCompile: ~<anonymous> C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\log4js\lib\appenders\index.js:112:41
+      1  100.0%            C:\Program Files\nodejs\node.exe
+      1    2.9%      LazyCompile: ~Socket._final node:net:441:35
+      1  100.0%        LazyCompile: ~callFinal node:internal/streams/writable:662:19
+      1  100.0%          LazyCompile: ~prefinish node:internal/streams/writable:719:19
+      1  100.0%            Function: ^finishMaybe node:internal/streams/writable:731:21
+      1    2.9%      LazyCompile: ~<anonymous> C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\mongoose\node_modules\mongodb\lib\sdam\monitor.js:222:12
+      1  100.0%        LazyCompile: ~executeAndReschedule C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\mongoose\node_modules\mongodb\lib\utils.js:701:34
+      1  100.0%          LazyCompile: ~makeInterruptibleAsyncInterval C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\mongoose\node_modules\mongodb\lib\utils.js:646:40
+      1  100.0%            LazyCompile: ~connect C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\mongoose\node_modules\mongodb\lib\sdam\monitor.js:80:12
+      1    2.9%      Function: ~<anonymous> node:internal/crypto/cipher:1:1
+      1  100.0%        Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%          Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1  100.0%            Function: ~<anonymous> node:crypto:1:1
+      1    2.9%      Function: ^setStreamTimeout node:internal/stream_base_commons:237:26
+      1  100.0%        LazyCompile: ~connectHandler C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\mongoose\node_modules\mongodb\lib\cmap\connect.js:298:28
+      1  100.0%          Function: ^onceWrapper node:events:636:21
+      1  100.0%            Function: ^emit node:events:475:44
+      1    2.9%      Function: ^resolveExports node:internal/modules/cjs/loader:472:24
+      1  100.0%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%          LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    2.9%      Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      1  100.0%        Function: ^resolveExports node:internal/modules/cjs/loader:472:24
+      1  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1    2.9%      Function: ^randomBytes node:internal/crypto/random:91:21
+      1  100.0%        Function: ^randomBytesSync C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\random-bytes\index.js:72:25
+      1  100.0%          Function: ^uidSync C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\uid-safe\index.js:75:18
+      1  100.0%            Function: ^generateSessionId C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\express-session\index.js:518:27
+      1    2.9%      Function: ^hash C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\express-session\index.js:596:14
+      1  100.0%        Function: ^isModified C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\express-session\index.js:425:24
+      1  100.0%          Function: ^shouldSetCookie C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\express-session\index.js:464:29
+      1  100.0%            Function: ^<anonymous> C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\express-session\index.js:220:28
+      1    2.9%      Function: ^compression C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\compression\index.js:59:31
+      1  100.0%        Function: ^handle C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\express\lib\router\layer.js:86:49
+      1  100.0%          Function: ^trim_prefix C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\express\lib\router\index.js:288:23
+      1  100.0%            LazyCompile: *next C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\express\lib\router\index.js:176:16
+      1    2.9%      Function: ^URLStateMachine C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\mongodb-connection-string-url\node_modules\whatwg-url\lib\url-state-machine.js:481:25
+      1  100.0%        LazyCompile: ~module.exports.basicURLParse C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\mongodb-connection-string-url\node_modules\whatwg-url\lib\url-state-machine.js:1206:41
+      1  100.0%          LazyCompile: ~URLImpl C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\mongodb-connection-string-url\node_modules\whatwg-url\lib\URL-impl.js:7:14
+      1  100.0%            LazyCompile: ~exports.setup C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\mongodb-connection-string-url\node_modules\whatwg-url\lib\URL.js:49:17
+
+    555   14.5%  C:\Program Files\nodejs\node.exe
+    460   82.9%    C:\Program Files\nodejs\node.exe
+     77   16.7%      Function: ^compileFunction node:vm:308:25
+     74   96.1%        Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+     74  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+     71   95.9%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      3    4.1%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      3    3.9%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1017:18
+      3  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1059:37
+      3  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     62   13.5%      Function: ^moduleStrategy node:internal/modules/esm/translators:112:56
+     62  100.0%        Function: ^moduleProvider node:internal/modules/esm/loader:322:28
+     62  100.0%          C:\Program Files\nodejs\node.exe
+     47   10.2%      Function: ^stat node:internal/modules/cjs/loader:151:14
+     23   48.9%        Function: ^tryFile node:internal/modules/cjs/loader:384:17
+     20   87.0%          Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+     19   95.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1    5.0%            Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+      3   13.0%          Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+      3  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+     23   48.9%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+     23  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+     23  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    2.1%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%          LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+     34    7.4%      LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      3    8.8%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-BEPO4KA3.mjs:10:575334
+      3  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      3  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-BEPO4KA3.mjs:10:575487
+      2    5.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-VVZ54QAZ.mjs:1:448859
+      2  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      2  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-VVZ54QAZ.mjs:1:448992
+      2    5.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-BEPO4KA3.mjs:10:91156
+      2  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      2  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-BEPO4KA3.mjs:10:575487
+      1    2.9%        Script: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/index.mjs:1:1
+      1  100.0%          C:\Program Files\nodejs\node.exe
+      1  100.0%            C:\Program Files\nodejs\node.exe
+      1    2.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-ZDL4FDSE.mjs:1:16227
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-ZDL4FDSE.mjs:1:39065
+      1    2.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-WEGWX2ZA.mjs:1:28395
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-WEGWX2ZA.mjs:1:45816
+      1    2.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-STYZJCSH.mjs:1:5511
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-STYZJCSH.mjs:1:5700
+      1    2.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-QBUKFXY5.mjs:1:37409
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-QBUKFXY5.mjs:1:37713
+      1    2.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-Q462DJEP.mjs:1:78124
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-Q462DJEP.mjs:1:78557
+      1    2.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-PDNPWKSY.mjs:1:84846
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-PDNPWKSY.mjs:1:85376
+      1    2.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-PDNPWKSY.mjs:1:51426
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-PDNPWKSY.mjs:1:85376
+      1    2.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-OXQWBBQW.mjs:1:53351
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-OXQWBBQW.mjs:1:53677
+      1    2.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-OXQWBBQW.mjs:1:30495
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-OXQWBBQW.mjs:1:53677
+      1    2.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-OEJ22UFT.mjs:1:9495
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-OEJ22UFT.mjs:1:37682
+      1    2.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-MUU5EDL5.mjs:1:18234
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            Script: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/index.mjs:1:1
+      1    2.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-HRJSU7OV.mjs:1:6065
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-HRJSU7OV.mjs:1:12391
+      1    2.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-H2CDZUEX.mjs:1:34649
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            Script: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/index.mjs:1:1
+      1    2.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-EAXTCEWT.mjs:1:227805
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-EAXTCEWT.mjs:1:228190
+      1    2.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-EAXTCEWT.mjs:1:213602
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-EAXTCEWT.mjs:1:227805
+      1    2.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-EAXTCEWT.mjs:1:168635
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-EAXTCEWT.mjs:1:228190
+      1    2.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-BEPO4KA3.mjs:3:10315
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-BEPO4KA3.mjs:10:3955
+      1    2.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-BEPO4KA3.mjs:10:427004
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-BEPO4KA3.mjs:10:575487
+      1    2.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-BEPO4KA3.mjs:10:288873
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-BEPO4KA3.mjs:10:575487
+      1    2.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-BEPO4KA3.mjs:10:114338
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-BEPO4KA3.mjs:10:575487
+      1    2.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-BEPO4KA3.mjs:10:103534
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-BEPO4KA3.mjs:10:575487
+      1    2.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-AOUMAZ2H.mjs:1:14799
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-AOUMAZ2H.mjs:1:24153
+      1    2.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-626573RJ.mjs:1:21931
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            Script: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/index.mjs:1:1
+      1    2.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-57LSIU4O.mjs:1:195930
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            Script: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/index.mjs:1:1
+      1    2.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-3SA7ECAQ.mjs:1:149457
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            Script: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/index.mjs:1:1
+      1    2.9%        LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-3BYHJQ4B.mjs:1:51849
+      1  100.0%          LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-DDHXTT42.mjs:1:443
+      1  100.0%            LazyCompile: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/node_modules/@faker-js/faker/dist/esm/chunk-3BYHJQ4B.mjs:1:54998
+     32    7.0%      Function: ^openSync node:fs:576:18
+     32  100.0%        Function: ^readFileSync node:fs:450:22
+     28   87.5%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     28  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      4   12.5%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      3   75.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1   25.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:969:33
+     23    5.0%      Function: ^realpathSync node:fs:2425:22
+     20   87.0%        Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+     18   90.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+     16   88.9%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      2   11.1%            Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+      2   10.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      2  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      3   13.0%        Function: ^finalizeResolution node:internal/modules/esm/resolve:397:28
+      3  100.0%          Function: ^moduleResolve node:internal/modules/esm/resolve:988:23
+      3  100.0%            Function: ^defaultResolve node:internal/modules/esm/resolve:1128:30
+     14    3.0%      Function: ^readSync node:fs:684:18
+     14  100.0%        Function: ^tryReadSync node:fs:429:21
+     14  100.0%          Function: ^readFileSync node:fs:450:22
+     12   85.7%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      2   14.3%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     10    2.2%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      9   90.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1   11.1%          Function: ~<anonymous> node:internal/crypto/util:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1   11.1%          Function: ~<anonymous> node:internal/cluster/primary:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1   11.1%          Function: ~<anonymous> node:internal/child_process:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1   11.1%          Function: ~<anonymous> node:http:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1   11.1%          Function: ~<anonymous> node:crypto:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1   11.1%          Function: ~<anonymous> node:_tls_wrap:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1   11.1%          Function: ~<anonymous> node:_tls_common:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1   11.1%          Function: ~<anonymous> node:_http_server:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1   11.1%          Function: ~<anonymous> node:_http_common:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1   10.0%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      1  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      7    1.5%      Function: ^closeSync node:fs:526:19
+      7  100.0%        Function: ^closeSync C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\graceful-fs\graceful-fs.js:72:24
+      7  100.0%          Function: ^readFileSync node:fs:450:22
+      7  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      7    1.5%      C:\Program Files\nodejs\node.exe
+      1   14.3%        LazyCompile: ~run node:internal/modules/esm/module_job:193:12
+      1  100.0%          C:\Program Files\nodejs\node.exe
+      1   14.3%        LazyCompile: ~parse C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\dotenv\lib\main.js:8:16
+      1  100.0%          LazyCompile: ~config C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\dotenv\lib\main.js:55:17
+      1  100.0%            Script: ~<anonymous> file:///C:/Users/guill/coder/BackEnd/servidorNodeConBalanceDeCarga/src/database.js:1:1
+      1   14.3%        LazyCompile: ~arrayStrictEqual C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\mongoose\node_modules\mongodb\lib\utils.js:544:26
+      1  100.0%          LazyCompile: ~equals C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\mongoose\node_modules\mongodb\lib\sdam\server_description.js:118:11
+      1  100.0%            LazyCompile: ~serverUpdateHandler C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\mongoose\node_modules\mongodb\lib\sdam\topology.js:372:24
+      1   14.3%        Function: ^append C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\mongoose\node_modules\mongodb\lib\utils.js:867:11
+      1  100.0%          Function: ^_write C:\Users\guill\coder\BackEnd\servidorNodeConBalanceDeCarga\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:26:11
+      1  100.0%            Function: ^writeOrBuffer node:internal/streams/writable:365:23
+      1   14.3%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1   14.3%        Function: ^Module node:internal/modules/cjs/loader:172:16
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1   14.3%        Function: ^FastBuffer node:internal/buffer:958:14
+      1  100.0%          Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      1  100.0%            Function: ^allocate node:buffer:398:18
+      6    1.3%      Function: ^read node:internal/modules/package_json_reader:16:14
+      6  100.0%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      5   83.3%          Function: ^resolveExports node:internal/modules/cjs/loader:472:24
+      5  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1   16.7%          LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      5    1.1%      Function: ^tryStatSync node:fs:404:21
+      5  100.0%        Function: ^readFileSync node:fs:450:22
+      5  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      5  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+
